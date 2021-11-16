@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF"
+    tools:context=".Bienvenida">
+
+    <Button
+        android:id="@+id/btnDisBronce"
+        android:layout_width="349dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Disciplinas Socio Bronce"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfoPersonal" />
+
+    <Button
+        android:id="@+id/btnDisPlatinum"
+        android:layout_width="346dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="#009688"
+        android:text="Disciplinas Socio Platinum"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisBronce"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnInfoPersonal"
+        android:layout_width="378dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#FFC107"
+        android:text="Información Personal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

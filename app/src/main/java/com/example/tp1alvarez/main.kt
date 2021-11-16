@@ -1,6 +1,6 @@
 package com.example.tp1alvarez
 
-fun main () {
+/*fun main () {
 
     fun menu() :Int {
 
@@ -93,5 +93,4 @@ fun main () {
     }
 
 }
-
-
+*/

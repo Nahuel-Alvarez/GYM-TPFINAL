@@ -3,16 +3,17 @@ package com.example.tp1alvarez
 class SocioPlatinum() : Socio(nombre = "",dni = "",fechaNac = "") {
 
     companion object { //Declaración de variable static de Java. Con el companion object se puede declarar dentro, la cantidad de variables y métodos que uno quiera que sean estáticos
-        var numIncremental: Int = 0
+        var numIncremental: Int = 1
     }
-
+    var contrasenia : String = ""
     var numSocioPlati: Int = 0
 
-    constructor(nombre: String, dni: String, fechaNac: String) : this() {
+    constructor(nombre: String, dni: String, fechaNac: String, contrasenia :String) : this() {
         this.numSocioPlati = CalcularNumSocio()
         this.nombre = nombre
         this.dni = dni
         this.fechaNac = fechaNac
+        this.contrasenia = contrasenia
     }
 
 

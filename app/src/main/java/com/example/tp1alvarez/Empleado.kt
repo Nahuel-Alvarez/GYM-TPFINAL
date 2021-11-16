@@ -3,6 +3,7 @@ package com.example.tp1alvarez
 class Empleado {
     var nombre :String = ""
     var objTarifas : TarifasSocios = TarifasSocios() //Composición
+    var contraseña :  String = ""
     companion object { //Declaración de variable static de Java. Con el companion object se puede declarar dentro, la cantidad de variables y métodos que uno quiera que sean estáticos
         var numIncremental : Int = 0
     }
@@ -17,12 +18,13 @@ class Empleado {
     var numLegajo : Int = 0
 
 
-    constructor(nombre : String, dni : String, fecContrato : String){
+    constructor(nombre : String, dni : String, fecContrato : String, contraseña : String){
 
         this.nombre = nombre
         this.dni = dni
         this.fecContrato = fecContrato
         this.numLegajo = CalcularNumLegajo() // Asigna el valor de la variable estática ya incrementada
+        this.contraseña = contraseña
     }
     fun CheckDni(dni : String) : Boolean{ //Método para chequear la longitud del dni antes de asignarlo a la variable de instancia
         var check : Boolean
